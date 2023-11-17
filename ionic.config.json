@@ -1,0 +1,7 @@
+{
+  "name": "aprende-ionic-interpolation-pipes-events",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
