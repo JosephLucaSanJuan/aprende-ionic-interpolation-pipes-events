@@ -1,0 +1,23 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Directiva Estructural *ngIf</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-button (click)="incTemperature(-10)">-10</ion-button>
+  <ion-button (click)="incTemperature(-1)">-</ion-button>
+  <ion-button (click)="incTemperature(1)">+</ion-button>
+  <ion-button (click)="incTemperature(10)">+10</ion-button>
+  <h1>Temperatura: {{ temperature }} ºC</h1>
+  <h1>
+    <ng-container *ngIf="temperature > 40">
+      ¡Qué calor!
+      <img width="50" src="../../assets/sol.png" alt="">
+    </ng-container>
+    <ng-container *ngIf="temperature < 10">
+      ¡Qué frío hace!
+      <img width="50" src="../../assets/snow-flake.jpg" alt="">
+    </ng-container>
+  </h1>
+</ion-content>

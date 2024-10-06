@@ -1,0 +1,18 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Directiva estructural *ngFor</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <b>Números:</b>
+  <span *ngFor="let n of numbers">
+    {{ n }}
+  </span>
+  <br><br>
+
+  <b>Frutas:</b>
+  <p *ngFor="let f of fruits">
+    {{ f }}
+  </p>
+</ion-content>

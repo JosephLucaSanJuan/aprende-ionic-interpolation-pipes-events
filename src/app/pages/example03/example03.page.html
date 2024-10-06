@@ -1,0 +1,12 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Evento (click)</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-button (click)="incrementValue()">+</ion-button>
+  <ion-button (click)="generateValue()">Generar valor</ion-button>
+  <ion-button (click)="decreaseValue()">-</ion-button>
+  <h1>{{ n }}</h1>
+</ion-content>
